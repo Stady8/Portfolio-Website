@@ -1,0 +1,348 @@
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Biotif-Regular, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+body {
+  margin: 0;
+  font-family: Biotif-Regular, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: rgb(21, 19, 19);
+  color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 100px;
+  z-index: 10;
+}
+.header a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 20px;
+}
+.header a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.header a.active {
+  color: white;
+}
+
+.content {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+}
+
+.body {
+  background-color: #363636;
+}
+
+.holder {
+  margin-top: 100px;
+}
+.container {
+  margin-right: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  justify-content: center;
+  display: grid;
+  padding-top: 50px;
+  background: #6e7a87ab;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.circle {
+  background: #db926f;
+  width: 160px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  border-bottom: 3px #2e2e2f solid;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 90px;
+}
+
+.titleContainer {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 90px;
+  color: white;
+}
+.displayImg {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 550px;
+  border-radius: 50px;
+}
+
+.name {
+  padding: 10px 16px;
+  color: #f1f1f1;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  font-size: 90px;
+}
+.nameDetails {
+  padding: 10px 16px;
+  color: #f1f1f1;
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+}
+
+.holderDiv {
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  background: #515151;
+  border-radius: 20px;
+  border: 1px solid;
+}
+
+footer {
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  margin-right: 40px;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1.1px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.email {
+  margin-bottom: 5px;
+}
+
+.webappHeader {
+  margin-top: 70px;
+}
+.webappTitle {
+  font-size: 35px;
+  margin-left: 20px;
+  color: white;
+}
+
+/****WEB APP *****/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 800px;
+  border-radius: 60px;
+}
+
+.gameDetails {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 30px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.webappProblemTitle {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 50px;
+}
+.webappProblem {
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 10px;
+  line-height: 28px;
+}
+
+.webappSolutionTitle {
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 50px;
+}
+
+.webappSolution {
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 10px;
+  line-height: 28px;
+}
+.webappSolution2 {
+  color: white;
+  font-size: 18px;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 10px;
+  line-height: 28px;
+  margin-bottom: 100px;
+}
+
+/*******command trailer***** */
+
+.commandHolder {
+  height: 100vh;
+}
+.commandDetails {
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 29px;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+}
+.commandDetails2 {
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 29px;
+  width: 70%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 60px;
+}
+.commandDetails3 {
+  justify-content: center;
+  display: flex;
+  color: white;
+  font-size: 29px;
+  width: 70%;
+  margin: auto;
+  margin-top: auto;
+  margin-top: 100px;
+}
+/*******PDF***** */
+.pdf {
+  margin-top: 50px;
+  position: fixed;
+  width: 100%;
+}

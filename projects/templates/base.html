@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href=" {%static '/css/main.css' %}?{% now 'U' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>{% block title %} Tyler Stady {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body class="body">
+    <div class="header">
+      <a href="{% url 'home' %}">Tyler Stady</a>
+      <a href="{% url 'home' %}#webContainer">Web</a>
+      <a href="{% url 'home' %}#gameContainer">Game</a>
+      <a href="{% url 'home' %}#otherContainer">Other</a>
+
+      <a href="{% url 'resume' %}">Resume</a>
+    </div>
+
+    {% block content %} {% endblock %}
+  </body>
+  <footer>
+    <div class="footer-content">
+      <div class="email">TLS106@pitt.edu</div>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/Stady8/"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/tylerstady"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</html>

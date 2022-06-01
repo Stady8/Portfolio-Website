@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load static %} {%block title%}VR Game - Tyler
+Stady{% endblock %} {% block content %}
+
+<div class="webappHeader">
+  <div class="webappTitle">VR Game</div>
+</div>
+
+<div class="gameDetails">
+  <b>
+    Final Project for VR Development. Made in unity with C# for the Oculus Quest
+    2.</b
+  >
+</div>
+
+<div class="slideshow-container">
+  <video width="100%" height="1040" controls>
+    <source src="{% static '/images/vrgame.mp4' %}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+{% endblock %}

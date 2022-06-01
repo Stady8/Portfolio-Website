@@ -1,0 +1,105 @@
+{% extends 'base.html' %} {% load static %} {%block title%}Web App - Tyler
+Stady{% endblock %} {% block content %}
+
+<div class="webappHeader">
+  <div class="webappTitle">Inventory Web App</div>
+</div>
+
+<div class="webappProblemTitle"><b>Problem</b></div>
+
+<div class="webappProblem">
+  Many fire departments opt to use nothing or try to keep notes via paper to
+  help track the department's information such as items, training, truck checks,
+  and more. This can lead to expiration dates being missed, items not getting
+  the maintenance they need and a mess trying find all the information promptly.
+  Very few online websites exist that allow for departments to track these
+  things online and are very confusing which would discourage most members from
+  using. Or the software is to expensive for volunteer departments to consider
+  using.
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp1.png' %}" alt="home" />
+  </div>
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp2.png' %}" alt="home" />
+  </div>
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp3.png' %}" alt="home" />
+  </div>
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp3.5.png' %}" alt="home" />
+  </div>
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp4.png' %}" alt="home" />
+  </div>
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp5.png' %}" alt="home" />
+  </div>
+
+  <div class="mySlides fade">
+    <img src="{% static '/images/webapp7.png' %}" alt="home" />
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="webappSolutionTitle"><b>Solution</b></div>
+
+<div class="webappSolution">
+  A web based app that allows for a multitude of things. One of them being able
+  to track inventory items including information about the item and their
+  location of different apparatuses. Inventory can be labeled with QR codes and
+  scanned which allows users to quickly find information about the item and its’
+  location. It also allows for the tracking of events such as training and
+  incidents. If an item is needed in a training session, or at an incident, it
+  can be scanned with the QR code and linked to that specific event. This
+  creates an inventory usage log and allows for tracking of members' attendance
+  as well as what items are lended to members. Another notable functionality of
+  the app is the ability to create a checklist for different apparatuses and
+  inventory items. Members are then able to complete the monthly checklist and
+  send email alerts to specific individuals when something needs to be repaired.
+</div>
+
+<div class="webappSolutionTitle"><b>Development</b></div>
+
+<div class="webappSolution">Front End - React JS, HTML, JavaScript, CSS</div>
+
+<div class="webappSolution2">
+  Back End - Nginx, NodeJs, Express, PostgreSQL, Ubuntu, Digital Ocean, Github,
+  SendGrid, Firebase
+</div>
+
+<script>
+  let slideIndex = 1;
+
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+{% endblock %}

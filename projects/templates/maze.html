@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load static %} {%block title%}Maze Game - Tyler
+Stady{% endblock %} {% block content %}
+
+<div class="webappHeader">
+  <div class="webappTitle">Maze Game</div>
+</div>
+
+<div class="gameDetails">
+  <b> Final Project for Mobile App Development. Made in unity with C#.</b>
+</div>
+
+<div class="slideshow-container">
+  <video width="100%" height="1040" controls>
+    <source src="{% static '/images/mazevid.mp4' %}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+{% endblock %}

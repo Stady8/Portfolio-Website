@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
+<div class="holder">
+  <div class="nameContainer">
+    <div class="name">HI. I'm Tyler.</div>
+    <div class="nameDetails">Welcome to my page. (Still in development)</div>
+  </div>
+
+  <div id="webContainer" class="container" onclick='location.href="webapp";'>
+    <div class="titleContainer">Inventory Web App</div>
+    <div class="content">
+      <img
+        class="displayImg"
+        src="{% static '/images/webapp1.png' %}"
+        alt="home"
+      />
+    </div>
+  </div>
+
+  <div id="gameContainer" class="container" onclick='location.href="mazegame";'>
+    <div class="titleContainer">Maze Game</div>
+    <div class="content">
+      <img
+        class="displayImg"
+        src="{% static '/images/mazeImg.png' %}"
+        alt="home"
+      />
+    </div>
+  </div>
+
+  <div class="container" onclick='location.href="vrgame";'>
+    <div class="titleContainer">VR Game</div>
+    <div class="content">
+      <img
+        class="displayImg"
+        src="{% static '/images/VrImage.png' %}"
+        alt="home"
+      />
+    </div>
+  </div>
+
+  <div id="otherContainer" class="container" onclick='location.href="trailer";'>
+    <div class="titleContainer">Other</div>
+    <div class="content">
+      <div class="holderDiv">Command Trailer</div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

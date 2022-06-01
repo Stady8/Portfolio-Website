@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load static %} {%block title%}Resume - Tyler
+Stady{% endblock %} {% block content %}
+
+<div class="pdf">
+  <iframe
+    src="{% static '/pdf/TylerStadyResumewebsite.pdf' %}"
+    style="width: 100%; height: 1000px"
+    frameborder="0"
+  ></iframe>
+</div>
+{% endblock %}
